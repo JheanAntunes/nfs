@@ -3,7 +3,7 @@ import { z } from "zod";
 const { invalid_type_error, message, required_error } = {
   required_error: "string",
   message: "por favor, preencha o campo com número.",
-  invalid_type_error: "por favor, preencha o campo",
+  invalid_type_error: "por favor, preencha o campo com número",
 };
 
 const sanitizedValue = (value: string) => {
@@ -28,7 +28,7 @@ export const formSchema = z.object({
     .min(1, message)
     .refine((venda) => refineFormat(venda), { message })
     .transform((v) => transformNumber(v)),
-  itensVendidos: z.string().min(1, { message }),
+  itensVendidos: z.string().min(1, { message: "por favor, preencha o campo." }),
   irpf: z
     .string({
       required_error,
