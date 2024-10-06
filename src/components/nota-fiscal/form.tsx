@@ -25,7 +25,7 @@ export function FormNotaFiscal() {
             <FormItem>
               <FormLabel>Valor da Venda:</FormLabel>
               <FormControl>
-                <Input placeholder="venda" {...field} />
+                <Input placeholder="ex: 10.000,00" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -39,7 +39,7 @@ export function FormNotaFiscal() {
               <FormLabel>Itens Vendidos:</FormLabel>
               <FormControl>
                 <Input
-                  placeholder="quantos itens foram vendidos ?"
+                  placeholder="ex: Desenvolvimento de Sofware"
                   {...field}
                 />
               </FormControl>
@@ -55,7 +55,7 @@ export function FormNotaFiscal() {
             <FormItem>
               <FormLabel>Porcentagem do Irpf:</FormLabel>
               <FormControl>
-                <Input placeholder="IRPF %" {...field} />
+                <Input placeholder="ex: 15" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -69,7 +69,7 @@ export function FormNotaFiscal() {
             <FormItem>
               <FormLabel>Porcentagem do Pis:</FormLabel>
               <FormControl>
-                <Input placeholder="PIS %" {...field} />
+                <Input placeholder="ex: 1,61" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -83,7 +83,7 @@ export function FormNotaFiscal() {
             <FormItem>
               <FormLabel>Porcentagem do Cofins:</FormLabel>
               <FormControl>
-                <Input placeholder="cofins %" {...field} />
+                <Input placeholder="ex: 3" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -97,7 +97,7 @@ export function FormNotaFiscal() {
             <FormItem>
               <FormLabel>Porcentagem do Inss:</FormLabel>
               <FormControl>
-                <Input placeholder="inss %" {...field} />
+                <Input placeholder="ex: 11" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -111,7 +111,7 @@ export function FormNotaFiscal() {
             <FormItem>
               <FormLabel>Porcentagem do Issqn:</FormLabel>
               <FormControl>
-                <Input placeholder="issqn %" {...field} />
+                <Input placeholder="ex: 5" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
